@@ -24,6 +24,7 @@ plugins=(
 	git
         zsh-completions
         zsh-autosuggestions
+	asdf
 )
 
 # sources
