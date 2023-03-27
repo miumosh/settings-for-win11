@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+complete -C /home/miyakei/.asdf/installs/terraform/1.4.0/bin/terraform terraform
