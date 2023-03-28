@@ -1,3 +1,4 @@
+# located ${HOME}/
 [wsl2]
 memory=2GB
 processors=1

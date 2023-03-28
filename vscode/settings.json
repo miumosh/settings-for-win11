@@ -1,0 +1,49 @@
+{
+  "liveshare.launcherClient": "visualStudioCode",
+  "editor.mouseWheelZoom": true,
+  "files.autoSave": "afterDelay",
+  "editor.minimap.enabled": false,
+  "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.tabSize": 2,
+  "VSCodeNotion.accessToken": "c96ab7580ac9b1d5dac7db456fe3e60c4e81e77299091dda1a36449f8374cba02b55b7c364effe58bfe3ac37a925097a01c5646e8db6d011b25509d2e00938e5b41984805ef135cb968fb5c6f65f",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "material-ui-snippets.showNotesOnStartup": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.bracketPairColorization.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  // "vim.normalModeKeyBindings": [
+  // // 	{
+  // // 		"before": ["<C-u>"],
+  // // 		"after": ["<C-p>"]
+  // // 	},
+  // //  	{
+  // // 		"before": ["<C-d>"],
+  // // 		"after": ["<C-n>"]
+  // // 	}
+  // // ]
+  //   {
+  //     "before": ["down"],
+  //     "after": ["g", "j"]
+  //   },
+  //   {
+  //     "before": ["up"],
+  //     "after": ["g", "k"]
+  //   },
+  // ]
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-u>": true
+  },
+  "editor.formatOnType": true,
+  "window.zoomLevel": -1,
+  "files.exclude": {
+    "**/*:Zone.Identifier": true
+  },
+  "hediet.vscode-drawio.resizeImages": null,
+  "workbench.editor.wrapTabs": true,
+  "window.commandCenter": true
+}
