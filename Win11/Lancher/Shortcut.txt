@@ -1,0 +1,70 @@
+# Create Lancher
+
+1. $PATH + "C:\\Lancher"
+2. create shortcut
+3. Win+R xxx
+
+# ------------------------------------------------------------
+# Shortcut
+# ------------------------------------------------------------
+ss            : This memo
+
+# Terminal
+cmd           : -
+runas         : administrator cmd
+powershell    : -
+powershell_ise: Powershell ISE
+pwsh          : PowerShell Core (custom)
+tw            : Windows Terminal
+
+# Setting-all
+control       : Control Panel
+
+# Setting-System
+taskmgr       : Task Manager
+appwiz.cpl    : Add / Remove Applications
+compmgmt.msc  : Management Computer
+devmgmt.msc   : Device Manager
+firewall.cpl  : Firewall
+fsmgmt.msc    : Share Folder
+gpedit.msc    : Local Group Policy Editor
+inetcpl.cpl   : Internet Property
+ncpa.cpl      : Network Connection
+nusrmgr.cpl   : User Account
+powercfg.cpl  : Power Option
+rsop.msc      : Policy Result Set Activate
+serivces.msc  : service
+sysdm.cpl     : System Property
+timedate.cpl  : NTP
+shutdown /s   : t 0 /hybrid	Shutdown
+intl.cpl      : locale
+taskschd.msc  : task scheduler
+
+# Settig-Boot
+shell:startup : Boot apps
+
+# Setting-Account
+netplwiz      : User Account
+
+# WindowsUpdate
+wupdmgr       : Microsoft Update
+
+# Tools
+notepad       : Memo Tool
+calc          : calcuration
+explorer      : Explorer
+iexplore      : IE -> 11.Edge
+mspaint       : Paint
+winword       : Word
+excel         : Excel
+powerPoint    : PowerPoint
+mstsc         : RDP
+regedit       : Registory Editor
+rstrui        : Recovery System
+shrpubw       : Share Folder
+SoundRecorder : Sound Recoader
+/ms-settings  : Settigs
+
+# Other
+dxdiag        : DirectX Diagnostic Tool
+eventvwr      : Event Viewer
