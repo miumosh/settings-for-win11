@@ -1,3 +1,9 @@
+# Environment
+- WSL: v2
+- Distribution: Ubuntu 22.04.1 LTS
+
+
+
 # Installation
 - before installation | update & upgrade
 

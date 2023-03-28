@@ -1,7 +1,5 @@
 # Environment
 - OS : Windows 11 pro
-- WSL: v2
-- Distribution: Ubuntu 22.04.1 LTS
 
 
 
