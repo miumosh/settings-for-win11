@@ -27,6 +27,8 @@ plugins=(
         zsh-completions
         zsh-autosuggestions
 	      asdf
+        docker
+        docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -58,6 +60,11 @@ source /usr/local/bin/az.completion
 # terraform 
 # autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/miyakei/.asdf/installs/terraform/1.4.0/bin/terraform terraform
+
+# kubectl
+source <(kubectl completion zsh)
+# autoload -Uz compinit
+# compinit
 
 # ------------------------------------------------------------
 # golang
