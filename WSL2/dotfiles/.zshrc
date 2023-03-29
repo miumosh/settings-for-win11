@@ -29,6 +29,7 @@ plugins=(
 	      asdf
         docker
         docker-compose
+        helm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -66,6 +67,9 @@ source <(kubectl completion zsh)
 # autoload -Uz compinit
 # compinit
 
+# helm
+source <(helm completion zsh)
+
 # ------------------------------------------------------------
 # golang
 # ------------------------------------------------------------
@@ -76,3 +80,12 @@ export PATH=$PATH:/home/miyakei/go/bin
 # ------------------------------------------------------------
 alias ll="ls -la"
 alias ee="explorer.exe"
+alias  d="docker"
+alias  k="kubectl"
+alias ek="eksctl"
+alias  h="helm"
+alias gs="git status"
+alias ga="git add"
+alias gl="git log --oneline --graph"
+alias gc="git commit"
+alias gp="git push origin HEAD"

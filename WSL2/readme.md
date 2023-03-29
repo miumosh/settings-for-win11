@@ -214,6 +214,28 @@
     asdf list $target
     asdf global $target $ver
     terraform -v
+
+    # eksctl
+    target="eksctl"
+    asdf plugin add $target
+    asdf plugin list
+    asdf list all $target
+    ver="0.135.0"
+    asdf install $target $ver
+    asdf list $target
+    asdf global $target $ver
+    eksctl version
+
+    # helm
+    target="helm"
+    asdf plugin add $target
+    asdf plugin list
+    asdf list all $target
+    ver="1.4.0"
+    asdf install $target $ver
+    asdf list $target
+    asdf global $target $ver
+    helm version
     ```
 
 
