@@ -23,10 +23,10 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(
-	      git
+	git
         zsh-completions
         zsh-autosuggestions
-	      asdf
+	asdf
         docker
         docker-compose
         helm
@@ -81,4 +81,4 @@ alias gl="git log --oneline --graph"
 alias gc="git commit"
 alias gp="git push origin HEAD"
 
-alias repo='cd $(ghq list | fzf)'
+alias repo='cd $(ghq list -p | fzf)'
