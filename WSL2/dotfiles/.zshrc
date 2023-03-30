@@ -41,31 +41,20 @@ export FZF_DEFAULT_OPTS='--layout=reverse'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-$ repo() {
-  declare -r REPO_NAME="$(ghq list >/dev/null | fzf-tmux --reverse +m)"
-  [[ -n "${REPO_NAME}" ]] && cd "$(ghq root)/${REPO_NAME}"
-}
-
 # ------------------------------------------------------------
 # completion
 # ------------------------------------------------------------
 # aws 
-# autoload bashcompinit && bashcompinit
-# autoload -Uz compinit && compinit
 complete -C '/usr/local/bin/aws_completer' aws
 
 # az 
-# autoload -U +X bashcompinit && bashcompinit
 source /usr/local/bin/az.completion
 
 # terraform 
-# autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/miyakei/.asdf/installs/terraform/1.4.0/bin/terraform terraform
 
 # kubectl
 source <(kubectl completion zsh)
-# autoload -Uz compinit
-# compinit
 
 # helm
 source <(helm completion zsh)
@@ -80,12 +69,16 @@ export PATH=$PATH:/home/miyakei/go/bin
 # ------------------------------------------------------------
 alias ll="ls -la"
 alias ee="explorer.exe"
+
 alias  d="docker"
 alias  k="kubectl"
 alias ek="eksctl"
 alias  h="helm"
+
 alias gs="git status"
 alias ga="git add"
 alias gl="git log --oneline --graph"
 alias gc="git commit"
 alias gp="git push origin HEAD"
+
+alias repo='cd $(ghq list | fzf)'
