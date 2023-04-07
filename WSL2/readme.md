@@ -105,6 +105,11 @@ declare -a tuples=(
     "nodejs 18.0.0"
     "python 3.10.0"
     "terraform 1.4.0"
+    "ansible-base 2.10.16"
+    "yq 4.30.8"
+    "act 0.2.40"
+    "kind 0.18.0"
+    "stern 1.24.0"
     # next try -------
     "jq xxx"
     "go xxx"
