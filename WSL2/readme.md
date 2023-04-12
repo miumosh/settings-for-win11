@@ -99,17 +99,21 @@ asdf current
 
 
 declare -a tuples=(
+    "act 0.2.40"
+    "ansible-base 2.10.16"
+    "argocd 2.6.0"
+    "direnv 2.32.0"
     "eksctl 0.135.0"
     "helm 3.10.0"
+    "kind 0.18.0"
     "minikube 1.26.0"
+    "mongosh 1.6.0"
     "nodejs 18.0.0"
     "python 3.10.0"
-    "terraform 1.4.0"
-    "ansible-base 2.10.16"
-    "yq 4.30.8"
-    "act 0.2.40"
-    "kind 0.18.0"
     "stern 1.24.0"
+    "terraform 1.4.0"
+    "yarn 1.22.0"
+    "yq 4.30.8"
     # next try -------
     "jq xxx"
     "go xxx"
