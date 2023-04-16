@@ -109,7 +109,7 @@ declare -a tuples=(
     "minikube 1.26.0"
     "mongosh 1.6.0"
     "nodejs 18.0.0"
-    "python 3.10.0"
+    "python 3.8.0"
     "stern 1.24.0"
     "terraform 1.4.0"
     "yarn 1.22.0"

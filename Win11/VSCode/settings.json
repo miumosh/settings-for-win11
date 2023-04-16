@@ -1,49 +1,84 @@
 {
-  "liveshare.launcherClient": "visualStudioCode",
-  "editor.mouseWheelZoom": true,
+  // -------------------------------------------------------------------------------------------
+  // File
   "files.autoSave": "afterDelay",
+  "files.autoGuessEncoding": true,
+  "files.exclude": { "**/*:Zone.Identifier": true },
+  // Editor
+  "editor.tabSize": 2,
+  "editor.mouseWheelZoom": true,
   "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  // -------------------------------------------------------------------------------------------
+  // Formatter
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  // -------------------------------------------------------------------------------------------
+  // JavaScript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "material-ui-snippets.showNotesOnStartup": false,
+  // TypeScript
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  // Prisma
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
+  // -------------------------------------------------------------------------------------------
+  // Window
+  "window.commandCenter": true,
+  // WrapTab / Workspace
+  "workbench.editor.wrapTabs": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  // -------------------------------------------------------------------------------------------
+  // Live
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveshare.launcherClient": "visualStudioCode",
+  // -------------------------------------------------------------------------------------------
+  // Explorer
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "editor.tabSize": 2,
+  // -------------------------------------------------------------------------------------------
+  // Notion
   "VSCodeNotion.accessToken": "c96ab7580ac9b1d5dac7db456fe3e60c4e81e77299091dda1a36449f8374cba02b55b7c364effe58bfe3ac37a925097a01c5646e8db6d011b25509d2e00938e5b41984805ef135cb968fb5c6f65f",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "material-ui-snippets.showNotesOnStartup": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.bracketPairColorization.enabled": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  // "vim.normalModeKeyBindings": [
-  // // 	{
-  // // 		"before": ["<C-u>"],
-  // // 		"after": ["<C-p>"]
-  // // 	},
-  // //  	{
-  // // 		"before": ["<C-d>"],
-  // // 		"after": ["<C-n>"]
-  // // 	}
-  // // ]
-  //   {
-  //     "before": ["down"],
-  //     "after": ["g", "j"]
-  //   },
-  //   {
-  //     "before": ["up"],
-  //     "after": ["g", "k"]
-  //   },
-  // ]
-  "vim.handleKeys": {
-    "<C-d>": true,
-    "<C-u>": true
-  },
-  "editor.formatOnType": true,
-  "window.zoomLevel": -1,
-  "files.exclude": {
-    "**/*:Zone.Identifier": true
-  },
+  // DrawIo
+  "hediet.vscode-drawio.theme": "dark",
   "hediet.vscode-drawio.resizeImages": null,
-  "workbench.editor.wrapTabs": true,
-  "window.commandCenter": true
+  // plantuml
+  "plantuml.render": "PlantUMLServer",
+  "plantuml.server": "http://localhost:8080",
+  // Kubernetes
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-show-information-expiration": "2023-10-06T23:59:44.300Z"
+  },
+  // Github Copilot
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
+  // -------------------------------------------------------------------------------------------
+  // Vim
+  // "vim.normalModeKeyBindings": [
+  //   {"before": ["<C-u>"], "after": ["<C-p>"]},
+  //   {"before": ["<C-d>"], "after": ["<C-n>"]},
+  //   {"before": ["down"],  "after": ["g", "j"]},
+  //   {"before": ["up"],    "after": ["g", "k"]},
+  // ]
+  // "vim.handleKeys": {"<C-d>": true, "<C-u>": true},
+  // -------------------------------------------------------------------------------------------
+  // PasteImage
+  // "pasteImage.basePath": "${currentFileDir}/..",
+  // "pasteImage.insertPattern": "${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}",
+  // "pasteImage.path": "${currentFileDir}/images"
 }
