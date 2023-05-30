@@ -1,4 +1,5 @@
-# located ${HOME}/
+# located C:\Users\<UserName>\.wslconfig
 [wsl2]
 memory=2GB
 processors=1
+localhostForwarding=True

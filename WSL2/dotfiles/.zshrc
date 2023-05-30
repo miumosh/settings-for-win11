@@ -16,6 +16,9 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=100000
 
+# fix "no match error"
+setopt +o nomatch
+
 # ------------------------------------------------------------
 # oh-my-zsh
 # ------------------------------------------------------------
@@ -24,7 +27,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(
-        git
+	      git
         zsh-completions
         zsh-autosuggestions
         asdf
@@ -45,13 +48,13 @@ export FZF_DEFAULT_OPTS='--layout=reverse'
 # ------------------------------------------------------------
 # completion
 # ------------------------------------------------------------
-# aws
+# aws 
 complete -C '/usr/local/bin/aws_completer' aws
 
-# az
+# az 
 source /usr/local/bin/az.completion
 
-# terraform
+# terraform 
 complete -o nospace -C /home/miyakei/.asdf/installs/terraform/1.4.0/bin/terraform terraform
 
 # kubectl
@@ -59,6 +62,14 @@ source <(kubectl completion zsh)
 
 # helm
 source <(helm completion zsh)
+
+# gh
+eval "$(gh completion -s zsh)"
+
+# ------------------------------------------------------------
+# docker
+# ------------------------------------------------------------
+export PATH=$PATH:/usr/bin/docker
 
 # ------------------------------------------------------------
 # golang
