@@ -1,20 +1,12 @@
-# Temp memo
-Uninstall vscode extension: styled-jsx, styled-jsx language server
-
-
-# Create Lancher
-
-1. $PATH + "C:\Lancher"
-2. create shortcut
-3. Win+R xxx
-
-# myk iphone share internet
-1jb4w299rkisn
+1. Create C:\Launcher
+2. $PATH + "C:\Launcher"
+3. create shortcut
+4. Use launcher by [ Win+R -> type shortcut name ]
 
 # ------------------------------------------------------------
 # Shortcut
 # ------------------------------------------------------------
-ss            : This memo
+memo          : This memo
 psr           : Step recoading tool
 enpass        : Password manaager
 epic          : Drawing any display
@@ -25,8 +17,7 @@ gptex         : ChatGPT Excel
 otab          : Office Tab
 postman       : Rest API Checker
 pwsh          : PowerShell Core
-qtab          : Folder Explorer
-shrtcut.txt   : This memo (origin)
+qdir          : Folder Explorer
 vivaldi       : Browser
 winshot       : Capture Tool
 wt            : Windows Terminal
