@@ -1,0 +1,57 @@
+# ----------------------------------------------------------------------------------
+# Using GH
+# ----------------------------------------------------------------------------------
+[init]
+        defaultBranch = main
+
+[user]
+        name  = xxx
+        email = xxx@xxx.com
+
+[core]
+        editor = vi
+
+[credential "https://github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+
+
+
+# ----------------------------------------------------------------------------------
+# Using GCM
+# ----------------------------------------------------------------------------------
+# gpg --full-generate-key
+# gpg --list-secret-keys --keyid-format LONG
+# # -- 省略
+# # sec rsa3072/614XXXXXXXXXXXX 2021-01-01 [SC]
+# #     43xxx614xxx
+# # uid  [ultimate] Your Name <xxx@xxx.com>
+# # ssb rsa3072/02F4XXXXXXXXXXXXXXXX 2021-01-01 [E]
+
+# gpg --armor --export 614XXXXXXXXXXXX
+# # -- BEGIN PGP PUBLIC KEY BLOCK --
+# # -- 省略
+# # -- END PGP PUBLIC KEY BLOCK --
+
+# # GitHubに公開鍵を登録
+
+# git config --global user.signingkey 43xxx614xxx
+# git config --global commit.gpgsign true
+
+
+# [user]
+#         name = xxx
+#         email = xxx@xxx.com
+#         signingkey = 43xxx614xxx
+# [credential]
+#         helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+# [gpg]
+#         # program = /mnt/c/Program\\ Files/Git/usr/bin/gpg.exe
+#         program = gpg
+# [commit]
+#         gpgsign = true
+
+

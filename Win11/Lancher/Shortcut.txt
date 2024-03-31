@@ -1,0 +1,195 @@
+# Temp memo
+Uninstall vscode extension: styled-jsx, styled-jsx language server
+
+
+# Create Lancher
+
+1. $PATH + "C:\Lancher"
+2. create shortcut
+3. Win+R xxx
+
+# myk iphone share internet
+1jb4w299rkisn
+
+# ------------------------------------------------------------
+# Shortcut
+# ------------------------------------------------------------
+ss            : This memo
+psr           : Step recoading tool
+enpass        : Password manaager
+epic          : Drawing any display
+annotator     : Drawing active display
+ppInk         : Drawing any display
+ev            : Research files
+gptex         : ChatGPT Excel
+otab          : Office Tab
+postman       : Rest API Checker
+pwsh          : PowerShell Core
+qtab          : Folder Explorer
+shrtcut.txt   : This memo (origin)
+vivaldi       : Browser
+winshot       : Capture Tool
+wt            : Windows Terminal
+zoom          : Meeting Tool
+gimp          : Photo Tool
+
+
+
+# Terminal
+cmd           : -
+runas         : administrator cmd
+powershell    : -
+powershell_ise: Powershell ISE
+pwsh          : PowerShell Core (custom)
+tw            : Windows Terminal
+
+
+
+# Setting-all
+control       : Control Panel
+
+# Setting-System
+taskmgr       : Task Manager
+appwiz.cpl    : Add / Remove Applications
+compmgmt.msc  : Management Computer
+devmgmt.msc   : Device Manager
+firewall.cpl  : Firewall
+fsmgmt.msc    : Share Folder
+gpedit.msc    : Local Group Policy Editor
+inetcpl.cpl   : Internet Property
+ncpa.cpl      : Network Connection
+nusrmgr.cpl   : User Account
+powercfg.cpl  : Power Option
+rsop.msc      : Policy Result Set Activate
+serivces.msc  : service
+sysdm.cpl     : System Property
+timedate.cpl  : NTP
+shutdown /s   : t 0 /hybrid	Shutdown
+intl.cpl      : locale
+taskschd.msc  : task scheduler
+
+# Settig-Boot
+shell:startup : Boot apps
+
+# Setting-Account
+netplwiz      : User Account
+
+# WindowsUpdate
+wupdmgr       : Microsoft Update
+
+# Tools
+notepad       : Memo Tool
+calc          : calcuration
+explorer      : Explorer
+iexplore      : IE -> 11.Edge
+mspaint       : Paint
+winword       : Word
+excel         : Excel
+powerPoint    : PowerPoint
+mstsc         : RDP
+regedit       : Registory Editor
+rstrui        : Recovery System
+shrpubw       : Share Folder
+SoundRecorder : Sound Recoader
+/ms-settings  : Settigs
+resmon        : Resource Monitor
+
+# Other
+dxdiag        : DirectX Diagnostic Tool
+eventvwr      : Event Viewer
+
+
+# ------------------------------------------------------------
+# Shortcut VSCode
+# ------------------------------------------------------------
+Select words multi cursor: Select > Shift+Ctrl+L
+Search words multi cursor: Alt+Enter
+
+Collapse code: Ctrl+K -> Ctrl+0
+Expand   code: Ctrl+K -> Ctrl+j
+
+Foward Tab line: Ctrl + ]
+Back   Tab line: Ctrl + [
+
+# Chat GPT
+Write Something then: Ctrl + Enter
+
+# Snippets
+# log -> console.log(|);
+
+# Emmets
+https://docs.emmet.io/cheat-sheet/
+
+# for React
+rafce: Allow function component
+
+# ------------------------------------------------------------
+# HTML Emmets
+# ------------------------------------------------------------
+div.wrap>(
+  (header>(div.logobox>div.logo>a[href=$]>img)+(nav>ul>li*3>a[href=$]{リンク$}))
+  +(main>(section>h1+p+figure)
+  +(aside>h2+ul+li>a[href=$]{リンク$})
+  +(footer>p))
+)
+
+# ------------------------------------------------------------
+# Windows
+# ------------------------------------------------------------
+# Virtual Desktop create: Win + Ctrl + D
+# Virtual Desktop switch: Win + Ctrl + <- or ->
+
+
+
+# ------------------------------------------------------------
+# Smart phone connect to WSL localhost:<ports>
+# Execution on PS1
+# ------------------------------------------------------------
+# Start
+$ports = @(3000, 8000) # edit
+$fwRuleName = "WSL 2 Firewall Unlock"
+$wsl2Address = wsl -e hostname -I | ForEach-Object { $_.trim() }
+
+New-NetFireWallRule -DisplayName $fwRuleName -Direction Inbound -LocalPort $ports -Action Allow -Protocol TCP
+
+for ($i = 0; $i -lt $ports.length; $i++) {
+  $port = $ports[$i]
+  netsh interface portproxy add v4tov4 listenport=$port listenaddress=* connectport=$port connectaddress=$wsl2Address
+}
+
+# Check
+Get-NetFireWallRule -DisplayName $fwRuleName | Get-NetFireWallPortFilter
+netsh interface portproxy show v4tov4
+
+# Finish
+Remove-NetFireWallRule -DisplayName $fwRuleName
+
+for ($i = 0; $i -lt $ports.length; $i++) {
+  $port = $ports[$i]
+  netsh interface portproxy delete v4tov4 listenport=$port listenaddress=*
+}
+
+
+
+# ------------------------------------------------------------
+# Next.js 
+# ------------------------------------------------------------
+# @/worker/index.js
+self.__WB_DISABLE_DEV_LOGS=true
+
+# Chrome > Developer Tools > Application > Service Workers [Unregister]
+
+
+
+# ------------------------------------------------------------
+# Terminal
+# ------------------------------------------------------------
+# Windows Terminal
+Add pane | : Alt + Shift + [+]
+Add pane - : Alt + Shift + [-]
+Change pane size: Alt + Shift + [↔↕]
+
+# ------------------------------------------------------------
+# Notion
+# ------------------------------------------------------------
+Dark Mode: Ctrl + Shift + L
